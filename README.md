@@ -1,2 +1,3 @@
-**توضیحات**
-مخزن شامل راه حل های من برای مسائل پروژه اویلر هستن . خیلی از مسائل بهینه حل نشدن و بهترین راه حل هم نیستن صرفا برای تفریحه .
+This Repo is a collection of scripts written by me for ProjectEuler(ProjectEuler.net) Problems.
+Some algorithms are not really efficient and optimized . Consider this some personal code just for fun and spending time .
+Good luck ;)
