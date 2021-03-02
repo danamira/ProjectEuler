@@ -27,6 +27,7 @@ def listFromNums(pyramid):
         for y in line.split(' '):
             x.append(int(y))
         result.append(x)
+
     return result
 
 
