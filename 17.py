@@ -1,7 +1,7 @@
 def inEnglish(num):
     # This function only returns data for integers less than 1001 ( Due to the problem ) .
     a = ['One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine', 'Ten']
-    if (num <= 10):
+    if num <= 10:
         return a[num - 1]
     b = ['Elveen', 'Twelve', 'Thirteen', 'Fourteen', 'Fifteen', 'Sixteen', 'Seventeen', 'Eighteen', 'Nineteen']
     if (num > 10 and num <= 19):

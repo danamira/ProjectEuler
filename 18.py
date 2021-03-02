@@ -1,5 +1,6 @@
-x = [1, 2, 3]
 import time
+
+nums = open('Data/18.txt').read()
 rows = [
     [75],
     [95, 64],
@@ -19,11 +20,21 @@ rows = [
 ]
 
 
+def listFromNums(pyramid):
+    result = []
+    for line in pyramid.splitlines():
+        x = []
+        for y in line.split(' '):
+            x.append(int(y))
+        result.append(x)
+    return result
+
+
 def solve(pyramid):
-    if (len(pyramid) == 1):
+    if len(pyramid) == 1:
         return pyramid[0][0]
     if len(pyramid) == 2:
-        if (pyramid[1][0] >= pyramid[1][1]):
+        if pyramid[1][0] >= pyramid[1][1]:
             return pyramid[0][0] + pyramid[1][0]
         else:
             return pyramid[0][0] + pyramid[1][1]
@@ -49,5 +60,5 @@ def solve(pyramid):
         return max(a)
 
 
-print(solve(rows))
+print(solve(listFromNums(nums)))
 print(time.process_time())
